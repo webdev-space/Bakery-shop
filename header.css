@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* body{
+    overflow: auto;
+} */
+
+.first-view{
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    width: 100%;
+    height: 75vh;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+.logo-ic > img{
+    height: 70px;
+    width: 70px;
+}
+
+
+.nav-itemlist {
+    /* margin-top: 7px; */
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+
+.list-items {
+    color: white;
+    font-size: 14px;
+    z-index: 10;
+}
+
+#search-input{
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+}
+
+
+.hero-bar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 75vh;
+    /* background-color: rgb(218, 99, 99); */
+    background-image: url('assets\\images\\hero-img.png');
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -2;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.black-screen-hero-bar {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    /* position: absolute; */
+    /* right: 0; */
+}
+
+.menu-acc-opt {
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+.signin {
+    border-color: rgb(228, 117, 54);
+    background-color: rgb(228, 117, 54);
+}
+
+.login {
+    border-color: black;
+    background-color: transparent;
+}
+
+.hero-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    gap: 7px;
+}
+
+.hero-textheading1 {
+
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+}
+
+.hero-textheading2 {
+    /* font-family: "Playfair Display", serif; */
+    font-size: 22px;
+}
+
+.show-cases{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: self-end;
+}
+
+.show-case-card{
+    justify-content: center;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 50vh;
+    width: 20%;
+    background-color: rgb(46, 46, 46);
+}
+
+.daily-top-purchases{
+    padding-top: 10px;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.daily-top-purchases h2{
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-size: 22px;
+}
+
+.daily-top-purchases ul li{
+    color: blanchedalmond;
+    font-size: 18px;
+    padding: 3px;
+}
+
+.daily-top-purchases ul{
+    width: 100%;
+}
+
+.overall-rating-number{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.overall-rating{
+    justify-content: right;
+}
+
+.overall-rating h3{
+    padding: 5px;
+    font-size: 16px;
+}
+
+.show-case-items{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    width: 20%;
+}
+
+
+/* animation */
+.hero-text {
+  animation: bounce 3s ; /* Apply the 'bounce' animation, 2 seconds duration, loop infinitely */
+}
+/* 
+.daily-top-purchases{
+    animation: bounce 3s ;
+} */
+
+@keyframes bounce {
+  0%{ /* At the start and end of the animation */
+    transform: translateY(400px); /* Element is at its original vertical position */
+  }
+  50% { /* In the middle of the animation */
+    transform: translateY(-20px); /* Element moves 20 pixels upwards */
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.daily-top-purchases{
+    animation: hidingwhilescroll both;
+    
+}
+
+@keyframes hidingwhilescroll {
+    
+}

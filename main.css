@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #A97458;
+    --background-color: #FFFFFF;
+    --secondary-color: #F9F4EE;
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-width: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    /* height: 200vh; */
+}
+
+.broad-strip {
+    background-color: black;
+    height: 1vh;
+    width: 100vw;
+}
+
+.items-grid {
+    background-color: var(--background-color);
+    max-width: 1400px;
+    height: 60vh;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--background-color);
+}
+
+.bestslle {
+    background-color: var(--background-color);
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 5px;
+    padding-left: 10px;
+    /* font-family: "lato", serif; */
+}
+
+.items{
+    color: #A97458;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 55vh;
+    min-width: 44vh;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px #A97458;
+
+}
+
+.items-info {
+    color: var(--background-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-img img {
+    height: 225px;
+    width: 99%;
+    border-radius: 20px;
+}
+
+.item-name {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.order-now {
+    
+    height: 35px;
+    width: 120px;
+}
+
+.item-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    color: var(--secondary-color);
+}
+
+.card {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.6s ease-out;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateX(0);
+}

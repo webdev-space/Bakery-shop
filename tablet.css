@@ -1,0 +1,50 @@
+@media screen and (max-width: 970px) {
+    .nav-itemlist {
+        /* visibility: hidden; */
+        display: none;
+        /* width: 0; */
+    }
+
+    .first-view {
+        height: 75vh;
+    }
+
+    .show-cases {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+    }
+
+    .broad-strip {
+        background-color: black;
+        height: 1vh;
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 1260px) {
+
+    .daily-top-purchases ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .daily-top-purchases ul li {
+        color: blanchedalmond;
+        font-size: 16px;
+        padding: 2px;
+    }
+
+    .daily-top-purchases{
+        display: flex;
+        align-items: center;
+    }
+}
