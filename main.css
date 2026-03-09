@@ -28,8 +28,6 @@ main {
 
 .items-grid {
     background-color: var(--background-color);
-    max-width: 1400px;
-    height: 60vh;
     display: flex;
     gap: 10px;
     overflow-x: auto;
@@ -59,8 +57,8 @@ main {
     align-items: center;
     justify-content: center;
     margin: 10px;
-    height: 55vh;
-    min-width: 44vh;
+    height: 430px;
+    min-width: 30vh;
     background-color: var(--secondary-color);
     border-radius: 20px;
     box-shadow: 0 4px 20px #A97458;
@@ -114,4 +112,5 @@ main {
 .card.show {
     opacity: 1;
     transform: translateX(0);
+
 }
